@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Burguer | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="slides()">
+    <span id="topo"></span>
+    <div class="container">
+        <div class="header">
+            <header>
+                <div id="menu" onclick="mostrar()" class="menubtn">&equiv;</div>
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="img/boxburguer.png" alt="">
+                    </a>
+                </div>
+                <div id="nav-shadow" onclick="esconder()">
+                    <div id="nav">
+                        <a class="closebtn" onclick="esconder()">×</a>
+                        <a href="index.html">Home</a>
+                        <a href="#cardapio">Cardápio</a>
+                        <a href="receitas.html" title="RECEITAS">???</a>
+                        <a href="#contato">Contato</a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="main">
+            <div>
+                <div class="slider">
+                    <!--
+                        O slides são incluídos aqui via javascript
+                    -->
+                    <span class="caption">Confira nosso cardápio!</span>
+                    <a class="btn" href="#cardapio" target="_blank">Clique Aqui</a>
+
+
+                </div>
+
+
+
+            </div>
+            <div class="blog">
+                <h1>Bem-Vindo ao Boxburguer!</h1>
+                <h3>Sabor que abraça, lanche que conquista.</h3>
+            </div>
+
+            <img class="img" src="img/kitchen.png" alt="" srcset="">
+            <section class="blog">
+
+                <br />
+                <h1>Sobre Nós</h1>
+                <div class="text">
+                    <p>A BoxBurguer começou em 2018 como uma pequena hamburgueria montada em um container reutilizado,
+                        localizada em um bairro movimentado de São Paulo. Com um cardápio enxuto e foco em hambúrgueres
+                        artesanais, rapidamente conquistou clientes pela qualidade dos ingredientes e sabor marcante.
+                    </p>
+                    <p>O ambiente simples e acolhedor, aliado ao atendimento próximo e eficiente, fez com que o boca a
+                        boca
+                        impulsionasse o crescimento. Em poucos meses, filas se tornaram comuns e a marca começou a
+                        ganhar
+                        destaque nas redes sociais.</p>
+                    <img class="img" src="img/mesas.png" alt="" srcset="">
+                    <p>Durante a pandemia, a BoxBurguer se reinventou com delivery próprio e kits para montagem de
+                        hambúrgueres
+                        em casa, mantendo o faturamento e fortalecendo a relação com os clientes.</p>
+                    <p>Com o tempo, a hamburgueria expandiu para novas unidades, mantendo o padrão de qualidade e o
+                        estilo
+                        urbano que a tornou popular. A marca também investiu em sustentabilidade, adotando embalagens
+                        ecológicas
+                        e parcerias com produtores locais.</p>
+                    <p>Em 2022, foi reconhecida como uma das melhores hamburguerias artesanais da cidade. Hoje, a
+                        BoxBurguer é
+                        referência em sabor, inovação e experiência gastronômica, mantendo suas raízes simples e seu
+                        compromisso
+                        com a excelência.</p>
+                </div>
+
+
+
+                <br />
+                <h1 id="cardapio">Cardápio</h1>
+                <p>Passe o mouse sobre as imagens dos lanches e saiba mais!</p>
+                <section class="cardapio">
+                    <div class="lanche">
+
+                        <div class="descricao">
+                            <h3>Hambúrguer Clássico com Queijo Cheddar</h3>
+                            <p>Hambúrguer tradicional com carne suculenta e queijo cheddar derretido. Simples, saboroso
+                                e sempre uma ótima escolha.</p>
+                            <p class="valor">R$: 35,90</p>
+                            <a href="receitas.html#cheddarburguer">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                    <div class="lanche">
+                        <div class="descricao">
+                            <h3>Hambúrguer Mexicano Picante</h3>
+                            <p>Explosão de sabores com carne suculenta, jalapeños, molho picante e temperos mexicanos.
+                                Para quem ama um toque ardente e cheio de personalidade!</p>
+                            <p class="valor">R$: 37,90</p>
+                            <a href="receitas.html#mexburguer">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                    <div class="lanche">
+                        <div class="descricao">
+                            <h3>Hambúrguer BBQ com Bacon Caramelizado</h3>
+                            <p>Suculento hambúrguer com molho BBQ defumado e bacon caramelizado crocante. Um clássico
+                                com toque agridoce irresistível.</p>
+                            <p class="valor">R$: 30,90</p>
+                            <a href="receitas.html#bbqburguer">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="lanche">
+                        <div class="descricao">
+                            <h3>Hambúrguer de Artesanal de Costela</h3>
+                            <p>Hamburguer artesanal com aquela carninha de costela que derrete na boca!</p>
+                            <p class="valor">R$: 33,90</p>
+                            <a href="receitas.html#costelaburguer">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                    <div class="lanche">
+                        <div class="descricao">
+                            <h3>Veg Burguer</h3>
+                            <p>Vegetarianos também são super bem-vindos para aproveitar um dos nossos lanches!
+                                Hambúrguer feito de Grão-de-Bico.</p>
+                            <p class="valor">R$: 42,90</p>
+                            <a href="receitas.html#vegburguer">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                    <div class="lanche">
+                        <div class="descricao">
+                            <h3>Hambúrguer de Siri</h3>
+                            <p>Inspirado pelo delicioso hambúrguer de siri feito pelo melhor mestre-cuca do oceano!</p>
+                            <p class="valor">R$: 36,90</p>
+                            <a href="receitas.html#siriburguer">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                </section>
+            </section>
+
+
+        </div>
+
+        <footer class="footer">
+            <p>
+            <h3>Horários</h3>
+            <span>Terça a domingo das 18:00 a 00:00</span>
+            </p>
+            <p id="contato">
+            <h3>Fale Conosco</h3>
+            <ul>
+                <li><a href="https://wa.me/5513974236001?text">&phone; (13) 97423-6001</a></li>
+                <li><a href="mailto:boxburguer@dominio.com?subject=Hello&body=This%20is%20a%20test%20message.">
+                        &#9993; boxburguer@dominio.com</a></li>
+                <li><a href="">&#128247; @boxburguer</a> </li>
+            </ul>
+            </p>
+            <p title="Vitor Henrique Percincula Pinheiro">2025 &copy;henriquepercincula</p>
+
+
+            <a id="topbtn" href="#topo" title="Retornar ao topo"> &ShortUpArrow; </a>
+        </footer>
+    </div>
+
+    <script>
+        function mostrar() {
+            document.getElementById("nav").style.width = "250px";
+            document.getElementById("nav-shadow").style.width = "100vw";
+        }
+
+        function esconder() {
+            document.getElementById("nav").style.width = "0";
+            document.getElementById("nav-shadow").style.width = "0";
+        }
+
+        function slides() { // Function principal. Ela é chamada novamente no fim do código.
+            var sld = document.querySelector('.slider')
+            var img = document.createElement('img') // cria a tag img
+
+            //sld.style.height = '300px'
+            //sld.style.overflow = 'hidden'
+            //img.style.width = '100%'
+
+            img.setAttribute('src', 'img/grill.png') //seleciona slide 1
+            sld.appendChild(img)
+
+            setTimeout(sld2, 3000)
+            function sld2() {
+                img.setAttribute('src', 'img/burguer.png') //seleciona slide 2
+
+                setTimeout(sld3, 3000)
+                function sld3() {
+                    img.setAttribute('src', 'img/family.png') //seleciona slide 3
+
+                    setTimeout(sld1, 3000)
+                    function sld1() {
+                        img.setAttribute('src', 'img/grill.png') //retorna ao slide 1
+                        img.removeAttribute('src') //apaga a tag img
+                        setTimeout(slides,0000) //Para criar um loop, chama a function principal
+                    }
+                }
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
